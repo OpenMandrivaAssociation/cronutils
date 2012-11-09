@@ -1,0 +1,18 @@
+diff --git a/Makefile b/Makefile
+index ed8da27..6dc0a3d 100644
+--- a/Makefile
++++ b/Makefile
+@@ -21,11 +21,11 @@ runlock: runlock.c subprocess.c tempdir.c
+ runstat: runstat.c subprocess.c tempdir.c
+ 
+ CFLAGS=-Wall -Werror -Wextra -D_XOPEN_SOURCE=500 -g -O0 -ansi -pedantic-errors -Wwrite-strings -Wcast-align -Wcast-qual -Winit-self -Wformat=2 -Wuninitialized -Wmissing-declarations -Wpointer-arith -Wstrict-aliasing -fstrict-aliasing
+-LDFLAGS=-lrt
++LDFLAGS=-lrt
+ 
+ SOURCES = runalarm.c runlock.c runstat.c subprocess.c subprocess.h tempdir.c tempdir.h Makefile runalarm.1 runlock.1 runstat.1 version
+ 
+-prefix = usr/local
++prefix = usr/
+ BINDIR = $(prefix)/bin
+ MANDIR = $(prefix)/share/man/man1
+ VERSION = $(shell cat version)
