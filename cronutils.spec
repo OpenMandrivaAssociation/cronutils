@@ -33,3 +33,10 @@ Utilities to assist running batch processing jobs.
 %{_bindir}/runstat
 %{_bindir}/runlock
 %{_mandir}/man1/*.xz
+
+
+%changelog
+* Mon Dec 12 2011 Alexander Khrukin <akhrukin@mandriva.org> 1.1-1
++ Revision: 740591
+- imported package cronutils
+
