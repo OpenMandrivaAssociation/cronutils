@@ -1,12 +1,11 @@
 Name:		cronutils
-Version:	1.1
+Version:	1.4
 Release:	1
 Summary:	Utilities to assist running batch processing jobs
 Group:		System/Base 
 License:	Apache 2.0
 URL:		http://code.google.com/p/cronutils
 Source0:	http://cronutils.googlecode.com/files/%{name}-%{version}.tar.gz
-Patch0:		prefix.patch
 
 
 BuildRequires:	python-devel
@@ -20,10 +19,10 @@ Utilities to assist running batch processing jobs.
 
 %prep
 %setup -q
-%patch0 -p1
+sed -i 's/local//g' Makefile
 
 %build
-%make
+%make CC=%{__cc}
 
 %install
 %makeinstall_std
@@ -33,10 +32,3 @@ Utilities to assist running batch processing jobs.
 %{_bindir}/runstat
 %{_bindir}/runlock
 %{_mandir}/man1/*.xz
-
-
-%changelog
-* Mon Dec 12 2011 Alexander Khrukin <akhrukin@mandriva.org> 1.1-1
-+ Revision: 740591
-- imported package cronutils
-
