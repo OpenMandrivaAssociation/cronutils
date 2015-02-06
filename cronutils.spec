@@ -1,6 +1,6 @@
 Name:		cronutils
 Version:	1.4
-Release:	1
+Release:	2
 Summary:	Utilities to assist running batch processing jobs
 Group:		System/Base 
 License:	Apache 2.0
