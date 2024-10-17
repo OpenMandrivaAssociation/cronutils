@@ -4,7 +4,7 @@ Release:	2
 Summary:	Utilities to assist running batch processing jobs
 Group:		System/Base 
 License:	Apache 2.0
-URL:		http://code.google.com/p/cronutils
+URL:		https://code.google.com/p/cronutils
 Source0:	http://cronutils.googlecode.com/files/%{name}-%{version}.tar.gz
 
 
